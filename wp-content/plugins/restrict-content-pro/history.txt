@@ -1,0 +1,191 @@
+3.3.13 - 2020-09-01 - Chris Jean
+	Added new updater.
+3.4 - 2020-09-08 - Jared Hill
+	Fix: WooCommerce Products can be incorrectly restricted if a user hasn't verified their email address.
+	New: Added new actions hooks to Membership page before and after payments table. 'rcp_membership_details_before_payments' and 'rcp_membership_details_after_payments'
+	Fix: Able to save invalid configuration with 0 duration and payment plan.
+	New: Introduced action hook that runs after membership is updated via admin. 'rpc_after_membership_admin_update'
+	New: Created new filter on price for RCP Group Accounts User Specified Count Quantity
+	Fix: Removed 'ba-bbq' library to fix Javascript error in WordPress 5.5
+	Fix: Some columns were missing from Membership Levels after updating from 2.x to 3.4.
+	Improvement: Update to Danish Translation.
+	Fix: Polish Currency Code formatting
+	Fix: Bulk actions don't work when using non-English languages.
+	Improvement: Option to apply discounts to signup fees
+	Improvement: Move Membership Level to BerlinDB
+	Fix: Incorrect expiration date when renewing an existing membership.
+	Improvement: Update to French Translation
+	Improvement: Update some BerlinDB bas classes
+	New: Add ability to toggle auto renew off/on [Stripe]
+	Improvement: Add ability to export all members at once.
+	Fix: Unable to save backslashes in the databases
+	New: Logs Table
+	New: Add payments importer tool
+	Improvement: Stop using '000-00-00 00:00:00' as default date values
+	Improvement: Add database table version numbers to system info file
+	New: Add Component Registry
+	Fix: CSS was removed in order to remove the breaking style from admin pages.
+	Fix: use "jQuery" instead of "$".
+	Improvement: %member_id% template tag description change
+	Improvement: Capitalize first letter in card brand on the update card form page.
+	Improvement: [rcp_update_card] shortcode did not work with editing multiple memberships.
+3.4.1 - 2020-09-18 - Jared Hill
+	Fix: restrict_content_pro table does not exist due to encoding type issue.
+3.4.2 - 2020-09-23 - Jared Hill
+	Fix: French Translation update.
+	Fix: Spanish Translation update.
+	Fix: Membership Levels fix for both sorting the levels and the number that can be displayed.
+	Update: Removing old License Key field, label, and notification.
+	Fix: Braintree and Stripe had dates being formatted with the incorrect format.
+	Fix: RCP settings page was not defaulting to the selected tab after saving form.
+3.4.3 - 2020-10-12 - Jared Hill
+	Major Change: Set session cookies instead of using wp_signon during registration. The wp_login hook will no longer fire after a user is registered.
+	Tweak: Add action to perform custom validation for Password Resets.
+	Tweak: Add filter to conditionally disable reCAPTCHA.
+	Tweak: Add filter to conditionally disable login hijacking.
+	Tweak: Add API to allow for asynchronous Promise-based registration validation.
+	Refactor: Remove old updater API calls
+	Log: Adding License Logging
+3.4.4 - 2020-10-13 - Jared Hill
+	Update: Updating the minified js for includes/js/registration.js.
+3.5 - 2020-10-28 - Jared Hill
+	Feature: If Stripe auto renewal comes in late, recalculate Stripe subscription next bill date
+	Feature: Stripe allow subscription periods and durations to be updated
+	Update: Update Stripe SDK version to version 7.52.0
+	Fix: Error when updating Stripe card for cancelled Stripe subscriptions
+	Fix: Ensure that Stripe profile js is not triggered until the DOM has loaded
+	Fix: Stripe registration fails when incorrectly trying to retrieve stripe intent object from payment_intent
+	Feature: Stripe Mark payments as refunded with webhook listener
+	Update: Update Stripe Api version to latest version
+	Refactor: Remove "rcp-" from Stripe.js script handle
+	Improvement: Improve error message handling when attaching payment method to a customer
+	Fix: Replacing stripe.handleCardPayment and stripe.handleCardSetup because those functions have been deprecated.
+3.5.1 - 2020-11-24 - Jared Hill
+	Update: Starting removal of 2Checkout from Restrict Content Pro Core
+	Improvement: Making the Stripe Webhook instructions stand out more on the settings page
+	Improvement: Adding the trailing slash to Stripe Webhook URL
+	Improvement: Remove files that are causing false positives in security scans
+	Fix: The Stripe SDK previously replaced the Error class with the Exception class, so core code was updated to match
+3.5.2 - 2020-11-3 - Jared Hill
+	Fix: Password Reset Form not processing usernames correctly
+	Fix: Stripe Sources lookup issue occurring when attempting to get the default source from legacy api configurations
+3.5.3 - 2021-01-08 - Jared Hill
+	Fix: Reworking jQuery to cover deprecations.
+3.5.4 - 2021-02-01 - Jared Hill
+	Fix: Updating minified version of register form js for Restrict Content Pro
+3.5.5 - 2021-02-05 - Jared Hill
+	Fix: Updating the link building for front end user cancellations, to ensure that the link still functions after translation occurs.
+	Fix: Fixing additional jQuery issues that occur when the base version of jQuery is overridden to the latest version.
+3.5.6 - 2021-02-19 - Jared Hill
+	Improvement: Updating the selector for the rcp_get_registration_form_state.
+	Improvement: Removed Currency Code comparison so that global currency can be changed in the future.
+	Fix: Disabling upgrades prevented a customer from purchasing a second membership with multiple memberships enabled
+	Improvement: Add jQuery to remove special characters from discount codes in admin area, because discount codes with special characters are not valid.
+	Update: Changed build notation from PayPal.
+3.5.7 - 2021-04-09 - Jared Hill
+	Improvement: Changed build notation from PayPal.
+3.5.8 - 2021-05-05 - Jared Hill
+	Feature: Introducing the Content Upgrade Redirect Block for RCP!
+3.5.9 - 2021-05-20 - Jared Hill
+	Feature: Adding new WP_CLI commands to create, update, get, list, and delete membership_levels through the command line.
+3.5.10 - 2021-07-19 - Jared Hill
+	Fix: PHP 8 Deprecations
+	Fix: Adding WordPress 5.8 block_categories_all covering custom Gutenberg category
+	Fix: Fixing the declaration of the Allowed Blocks for Content Upgrade Redirect
+	Fix: Fixing InnerBlocks Template declarations
+3.5.11 - 2021-09-14 - Jared Hill
+	Update: Adding messaging for new plan inclusions and hiding add-ons page temporarily
+3.5.12 - 2021-09-14 - Jared Hill
+	Fix: Ensuring that the rcp admin notice can be dismissed from any admin page
+3.5.13 - 2022-05-04 - Israel Barragan
+	Fix: Error message not shown when toggling auto-enable on/off [RCP-279].
+3.5.14 - 2022-05-19 - Israel Barragan
+	Improvement: Add a new feature in the RCP settings to let the user add Stripe Descriptor and Suffix.
+	Improvement: Add a new feature to allow switching free memberships if the user has already used or trialed a free membership.
+	Fix: PHP 8.x. Fix string format while displaying the percentage symbol on the "Discount Codes" page.
+3.5.15 - 2022-06-02 - Israel Barragan
+	Fix: Not available subscriptions when renewing.
+3.5.16 - 2022-06-22 - Israel Barragan
+	Improvement: Style Stripe information box.
+	Improvement: Update codebase to have sync RCP with RC Free.
+	Feature: Allow shortcode [restrict] to use levels as number in attribute `userlevel`.
+3.5.17 - 2022-06-24 - Israel Barragan
+	Fix: Remove forcing the usage of attributes `userlevel` or `level` in shortcode `[restrict]`. The `[restrict]` shortcode will be deprecated in future releases.
+3.5.18 - 2022-06-29 - Israel Barragan
+	Improvement: Change the label "Membership Level" -> "Membership" in the exporting tools.
+	Fix: Error when the setting "Remove Data on Uninstall" was enable. There was a wrong file reference.
+	Update: Misc Setting label "Multiple Free Subscriptions" to "Switch Free Subscription" since it makes more sense.
+	Add: Missing settings in the System Info Page(Stripe Statement Descriptor, Stripe Statement Suffix, Remove Data on Uninstall, Switch Free Subscription).
+3.5.19 - 2022-07-18 - Israel Barragan
+	Fix: Error when updating or adding a card with Stripe. Update RCP JS Stripe code since it was using deprecated function.
+	Improvement: Update styles of registration page. Remove tables, replace with divs. Props James Welbes
+	Improvement: Update styles of Membership page. Remove table, replace with divs. Align columns. Tweak mobile view. Give inputs a max width. Props James Welbes.
+3.5.20 - 2022-07-26 - Israel Barragan
+	Fix: Registration form with missing labels.
+	Improvement: Styling of registration form for desktop and mobile.
+3.5.21 - 2022-08-11 - Israel Barragan
+	Add: Welcome Page for new installation.
+	Fix: Issue with settings not saving the PayPal API keys.
+	Fix: Issue with PayPal Express and PayPal Pro cancel button that was not enabled.
+	Fix: Styles from the registration button, the font size in the password hint text
+3.5.22 - 2022-08-31 - Israel Barragan
+	Fix: Braintree keys that were not been saved in the settings page.
+	Fix: Code internal fixes to prevent usage of PHP Short tags.
+3.5.23 - 2022-09-29 - Israel Barragan
+	Fix: Hide PayPal and Braintree credentials as they were visible without clicking the view icon.
+	Fix: Maximum number of simultaneous connections per member setting.
+	Add: Freemius integration to help Restrict Content Pro be a better plugin.
+3.5.23.1 - 2022-10-21 - Israel Barragan
+	Fix: Hotfix to update Braintree libraries in the backend to 6.9.0 and frontend JS Droping to 1.33.4. Add fields to comply 3DS version 2.
+	Fix: Remove composer libraries that are not needed by RCP. In some servers, PHPStan was detected as Malware.
+3.5.24 - 2022-11-09 - Israel Barragan
+	Fix: Discount Signup Fees option as it was unable to saved.
+	Improvement: Include Help Page sections in RCP Settings instead of pointing to the knowledge site.
+	Improvement: Register template. Props to @leland
+3.5.24.1 - 2022-11-19 - Israel Barragan
+	Fix: Fatal error cannot redeclare “rcp_should_show_discounts” when using multiple paid registration forms. Props @lelandf
+3.5.25 - 2023-01-23 - Israel Barragan
+	Fix: Sanitation issues in core files.
+	Improvement: Add new Stripe Option to filter the webhooks that are by RCP. If you want to use a couple of webhooks then you can use them instead of all.
+	Improvement: Add constant 'RC_NO_FREEMIUS' and filter `restrict_content_integrations_should_load_freemius` to avoid Freemius usage.
+	Update: Update Stripe library to version 10.3.
+	Update: RCP Stripe API version to 2023-01-23.
+3.5.26 - 2023-01-27 - Israel Barragan
+	HotFix: Fix RCP Stripe code that was ignoring all the webhooks.
+3.5.27 - 2023-03-06 - Israel Barragan
+	Improvement: Replace Freemius third-party integration with our StellarWP Telemetry.
+	Fix: Replaces Divs with tables on the 'Register page' and 'Your Membership' page.
+	Fix: Block 'Content Upgrade Redirect' not being shown in the block list.
+3.5.28 - 2023-04-11 - Israel Barragan
+	Improvement: Add new feature in our Telemetry integration to send additional information to Telemetry.
+	Fix: Style fixes to register Forms.
+	Fix: Blank screen in Earning reports when revenue is 0.
+3.5.29 - 2023-05-09 - Israel Barragan
+	Update: These changes are the same of version 3.5.31. This version is in conflict with the RCP Custom Redirect add-on.
+3.5.30 - 2023-05-10 - Israel Barragan
+	Update: Rollback version 3.5.29 to the state of version 3.5.28 due to an error with the RCP Custom Redirect add-on.
+3.5.31 - 2023-05-10 - Israel Barragan
+	Fix: Issue with RCP Custom Redirect add-on.
+	Improvement: Make sure that the Stripe integration is returning a valid success or error response. Allow Stripe to retry the event if it was not processed.
+	Improvement: Add Stripe configuration to make sure it retries events that were not processed. This is helpful if many events are processed at the same time.
+3.5.32 - 2023-06-06 - Israel Barragan
+	Fix: Updated codes for Stripe Error messages to reduce false positives.
+	Improvement: Telemetry settings are now shown on initial plugin activation, and can be accessed from Plugins > Installed under the Restrict Content Pro plugin.
+	Update: Removed outdated notices for certain add-ons.
+3.5.33 - 2023-06-20 - Israel Barragan
+	Fix: Resolved a security vulnerability on the admin pages to ensure the protection of your website.
+	Improvement: We removed the Stripe webhooks setting in `Restrict > Settings / Misc`.
+	RCP uses these 6 webhooks only: customer.subscription.created, customer.subscription.deleted, charge.succeeded, charge.refunded, invoice.payment_succeeded, invoice.payment_failed.
+	See https://restrictcontentpro.com/knowledgebase/stripe/ for additional details.
+	Improvement: We have enhanced the functionality of the RCP core by incorporating the 'RCP Custom Redirect' add-on. This addition allows for custom redirection capabilities within the RCP system, providing more flexibility and control for administrators.
+3.5.34 - 2023-06-22 - Israel Barragan
+	HotFix: Resolved a conflict that caused a critical error when Restrict Content Pro is active at the same time as The Events Calendar or Event Tickets.
+3.5.35 - 2023-08-07 - Israel Barragan
+	Fix: Extended compatibility with PHP 8.x
+    Fix: Fix compatibility with custom database prefix on Site Info > Restrict Content Pro
+    Fix: Resolved error in RCP BuddyPress Add-on Settings
+    Fix: Increased Enforce Strong Password Add-on requirements and updated on-screen user instructions
+    Updated: Languages domain path to increase ease of usage with translation plugins
+    Security: Update third-party libraries that had vulnerabilities
+3.5.36 - 2023-08-09 - Israel Barragan
+	HotFix: Removed third party libraries that might cause critical vulnerability, ensuring improved security for all users.

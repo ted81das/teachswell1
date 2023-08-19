@@ -1,0 +1,425 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: WPShapere Lite\n"
+"POT-Creation-Date: 2020-06-04 17:01+0530\n"
+"PO-Revision-Date: 2020-06-04 17:05+0530\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpshapere-lite.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/acmee-framework/inc/aof.class.php:41
+#, php-format
+msgid "%s Settings"
+msgstr ""
+
+#: includes/acmee-framework/inc/aof.class.php:57
+msgid "Loading..."
+msgstr ""
+
+#: includes/acmee-framework/inc/aof.class.php:380
+msgid "Font Family"
+msgstr ""
+
+#: includes/acmee-framework/inc/aof.class.php:398
+msgid "Color"
+msgstr ""
+
+#: includes/acmee-framework/inc/aof.class.php:403
+msgid "Font Weight"
+msgstr ""
+
+#: includes/acmee-framework/inc/aof.class.php:413
+msgid "Font Style"
+msgstr ""
+
+#: includes/acmee-framework/inc/aof.class.php:423
+msgid "Font Size"
+msgstr ""
+
+#: includes/acmee-framework/inc/aof.class.php:502
+msgid "Save Changes"
+msgstr ""
+
+#: includes/acmee-framework/inc/aof.class.php:631
+msgid "Settings saved."
+msgstr ""
+
+#: includes/acmee-framework/inc/aof.class.php:635
+msgid "Error: Settings not saved."
+msgstr ""
+
+#: includes/premium-version.class.php:22
+msgid "Upgrade to Premium"
+msgstr ""
+
+#: includes/premium-version.class.php:22
+msgid "Premium Version"
+msgstr ""
+
+#: includes/premium-version.class.php:37
+msgid "Review Plugin"
+msgstr ""
+
+#: includes/premium-version.class.php:40
+msgid "Purchase Now"
+msgstr ""
+
+#: includes/wps-impexp.class.php:24
+msgid "Import and Export Settings"
+msgstr ""
+
+#: includes/wps-impexp.class.php:24
+msgid "Import-Export Settings"
+msgstr ""
+
+#: includes/wps-impexp.class.php:37
+msgid "Settings Imported!"
+msgstr ""
+
+#: includes/wps-impexp.class.php:45
+msgid "You are importing empty data or wrong data format."
+msgstr ""
+
+#: includes/wps-impexp.class.php:51
+msgid "Reset to default"
+msgstr ""
+
+#: includes/wps-impexp.class.php:52
+msgid "By resetting all settings will be deleted!"
+msgstr ""
+
+#: includes/wps-impexp.class.php:57
+msgid "Reset All Settings"
+msgstr ""
+
+#: includes/wps-impexp.class.php:61
+msgid "Export Settings"
+msgstr ""
+
+#: includes/wps-impexp.class.php:63
+msgid "Save the below contents to a text file."
+msgstr ""
+
+#: includes/wps-impexp.class.php:67 includes/wps-impexp.class.php:72
+msgid "Import Settings"
+msgstr ""
+
+#: includes/wps-options.php:68 includes/wps-options.php:82
+msgid "General Options"
+msgstr ""
+
+#: includes/wps-options.php:69 includes/wps-options.php:181
+msgid "Login Options"
+msgstr ""
+
+#: includes/wps-options.php:70 includes/wps-options.php:338
+msgid "Dashboard Options"
+msgstr ""
+
+#: includes/wps-options.php:71 includes/wps-options.php:354
+msgid "Adminbar Options"
+msgstr ""
+
+#: includes/wps-options.php:72 includes/wps-options.php:385
+msgid "Admin menu Options"
+msgstr ""
+
+#: includes/wps-options.php:73 includes/wps-options.php:401
+msgid "Footer Options"
+msgstr ""
+
+#: includes/wps-options.php:74 includes/wps-options.php:413
+msgid "Select Theme"
+msgstr ""
+
+#: includes/wps-options.php:75 includes/wps-options.php:433
+#: includes/wps-options.php:439
+msgid "Upgrade to Premium Version"
+msgstr ""
+
+#: includes/wps-options.php:87
+msgid "Heading H1 color"
+msgstr ""
+
+#: includes/wps-options.php:94
+msgid "Heading H2 color"
+msgstr ""
+
+#: includes/wps-options.php:101
+msgid "Heading H3 color"
+msgstr ""
+
+#: includes/wps-options.php:108
+msgid "Heading H4 color"
+msgstr ""
+
+#: includes/wps-options.php:115
+msgid "Heading H5 color"
+msgstr ""
+
+#: includes/wps-options.php:122
+msgid "Heading H6 color"
+msgstr ""
+
+#: includes/wps-options.php:129
+msgid "Remove unwanted items"
+msgstr ""
+
+#: includes/wps-options.php:132 includes/wps-options.php:347
+msgid "Select whichever you want to remove."
+msgstr ""
+
+#: includes/wps-options.php:134
+msgid "Wordpress Help tab."
+msgstr ""
+
+#: includes/wps-options.php:135
+msgid "Screen Options."
+msgstr ""
+
+#: includes/wps-options.php:136
+msgid "Wordpress update notifications."
+msgstr ""
+
+#: includes/wps-options.php:141
+msgid "Disable automatic updates"
+msgstr ""
+
+#: includes/wps-options.php:144
+msgid "Select to disable all automatic background updates (Not recommended)."
+msgstr ""
+
+#: includes/wps-options.php:149
+msgid "Disable update emails"
+msgstr ""
+
+#: includes/wps-options.php:152
+msgid "Select to disable emails regarding automatic updates."
+msgstr ""
+
+#: includes/wps-options.php:157
+msgid "Hide update notifications"
+msgstr ""
+
+#: includes/wps-options.php:160
+msgid "Select to hide update notifications on plugins page (Not recommended)."
+msgstr ""
+
+#: includes/wps-options.php:165
+msgid "Hide Admin bar"
+msgstr ""
+
+#: includes/wps-options.php:168
+msgid "Select to hideadmin bar on frontend."
+msgstr ""
+
+#: includes/wps-options.php:173
+msgid "Custom CSS for Admin pages"
+msgstr ""
+
+#: includes/wps-options.php:186
+msgid "Disable custom styles for login page."
+msgstr ""
+
+#: includes/wps-options.php:189
+msgid "Check to disable"
+msgstr ""
+
+#: includes/wps-options.php:194
+msgid "Login page title"
+msgstr ""
+
+#: includes/wps-options.php:201
+msgid "Background color"
+msgstr ""
+
+#: includes/wps-options.php:208
+msgid "Background image"
+msgstr ""
+
+#: includes/wps-options.php:214
+msgid "Background Repeat"
+msgstr ""
+
+#: includes/wps-options.php:217
+msgid "Check to repeat"
+msgstr ""
+
+#: includes/wps-options.php:222
+msgid "Scale background image"
+msgstr ""
+
+#: includes/wps-options.php:225
+msgid "Scale image to fit Screen size."
+msgstr ""
+
+#: includes/wps-options.php:230 includes/wps-options.php:367
+msgid "Upload Logo"
+msgstr ""
+
+#: includes/wps-options.php:233
+msgid ""
+"Image to be displayed on login page. Maximum width should be under 450pixels."
+msgstr ""
+
+#: includes/wps-options.php:237
+msgid "Logo url"
+msgstr ""
+
+#: includes/wps-options.php:244
+msgid "Hide Back to blog link"
+msgstr ""
+
+#: includes/wps-options.php:248 includes/wps-options.php:256
+msgid "select to hide"
+msgstr ""
+
+#: includes/wps-options.php:252
+msgid "Hide Remember me"
+msgstr ""
+
+#: includes/wps-options.php:260
+msgid "Login button colors"
+msgstr ""
+
+#: includes/wps-options.php:265
+msgid "Button background  color"
+msgstr ""
+
+#: includes/wps-options.php:273
+msgid "Button border color"
+msgstr ""
+
+#: includes/wps-options.php:280
+msgid "Button shadow color"
+msgstr ""
+
+#: includes/wps-options.php:288
+msgid "Button text color"
+msgstr ""
+
+#: includes/wps-options.php:295
+msgid "Button hover background color"
+msgstr ""
+
+#: includes/wps-options.php:302
+msgid "Button hover text color"
+msgstr ""
+
+#: includes/wps-options.php:310
+msgid "Button hover border color"
+msgstr ""
+
+#: includes/wps-options.php:317
+msgid "Button hover shadow color"
+msgstr ""
+
+#: includes/wps-options.php:325
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/wps-options.php:330
+msgid "Custom CSS for Login page"
+msgstr ""
+
+#: includes/wps-options.php:344
+msgid "Remove unwanted Widgets"
+msgstr ""
+
+#: includes/wps-options.php:359
+msgid "Set default adminbar height."
+msgstr ""
+
+#: includes/wps-options.php:363
+msgid "Select this option to set default admin bar height."
+msgstr ""
+
+#: includes/wps-options.php:370
+msgid "Image to be displayed in all pages. Maximum size 200x50 pixels."
+msgstr ""
+
+#: includes/wps-options.php:375
+msgid "Remove Unwanted Menus"
+msgstr ""
+
+#: includes/wps-options.php:378
+msgid "Select menu items to remove."
+msgstr ""
+
+#: includes/wps-options.php:390
+msgid "Admin menu width"
+msgstr ""
+
+#: includes/wps-options.php:406
+msgid "Footer Text"
+msgstr ""
+
+#: includes/wps-options.php:409
+msgid "Put any text you want to show on admin footer."
+msgstr ""
+
+#: includes/wps-options.php:418
+msgid "Choose a color theme"
+msgstr ""
+
+#: includes/wps-options.php:422
+msgid "Default"
+msgstr ""
+
+#: includes/wps-options.php:423
+msgid "Pomegranate"
+msgstr ""
+
+#: includes/wps-options.php:424
+msgid "Black and white"
+msgstr ""
+
+#: includes/wps-options.php:425
+msgid "Beach"
+msgstr ""
+
+#: includes/wps-options.php:426
+msgid "Africa"
+msgstr ""
+
+#: includes/wpshapere.class.php:59
+msgid "Visit Knowledgebase"
+msgstr ""
+
+#: includes/wpshapere.class.php:316
+#, php-format
+msgid "Howdy, %1$s"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WPShapere Lite"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://wpshapere.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"WPShapere Lite is a wordpress plugin to customize the WordPress Admin theme "
+"and elements as your wish. Make WordPress a complete CMS with WPShapere Lite."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "AcmeeDesign Softwares and Solutions"
+msgstr ""
