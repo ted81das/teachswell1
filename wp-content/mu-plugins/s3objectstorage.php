@@ -507,7 +507,7 @@ class Amazon_S3_and_CloudFront_Tweaks {
 	 * @return string
 	 */
 	public function wasabi_s3_console_url( $url ) {
-		return 'https://console.wasabisys.com/#/file_manager/';
+		return 'https://aws.amazon.com//#/file_manager/';
 	}
 
 	/*
